@@ -18,7 +18,8 @@ class TodoItem extends React.Component{
                             fontSize:'20px', 
                             height: '40px', 
                             alignItems: 'center',
-                            display: 'flex'}}>
+                            display: 'flex',
+                            wordBreak: 'break-word'}}>
                             <div style={{display:'inline'}}>
                                 {this.props.text}
                             </div>

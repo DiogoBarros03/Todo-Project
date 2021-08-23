@@ -66,7 +66,7 @@ class App extends React.Component{
                         <InputBar onSubmit={this.onInputSubmit}></InputBar>
                     </div>
                 </div>
-                <div className="ui one column stackable center aligned page grid" style={{marginTop: '0px'}}>
+                <div className="ui one column stackable center aligned page grid" style={{marginTop: '0px', padding: '0'}}>
                     <div className="column twelve wide">
                         <TodoList todoItems={this.state.todoItems} onDelete={this.deleteElement}></TodoList>
                     </div>
