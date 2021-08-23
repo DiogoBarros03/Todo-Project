@@ -58,21 +58,23 @@ class App extends React.Component{
     render(){
         
         return (
-            <div className="ui  container-css" >
-                
-                <div className="ui one column stackable center aligned page grid" style={{padding: '0',width:'100%'}}>
-                    <div className="column twelve wide" style={{maxWidth: '500px'}}>
-                        <h1 style={{textAlign:'left'}}>TODO APP</h1>
-                        <InputBar onSubmit={this.onInputSubmit}></InputBar>
+            <div style={{paddingLeft: '10px', paddingRight: '10px'}}>
+                <div className="ui  container-css"  >
+                    
+                    <div className="ui one column stackable center aligned page grid" style={{padding: '0',width:'100%'}}>
+                        <div className="column twelve wide" style={{maxWidth: '500px'}}>
+                            <h1 style={{textAlign:'left'}}>TODO APP</h1>
+                            <InputBar onSubmit={this.onInputSubmit}></InputBar>
+                        </div>
                     </div>
-                </div>
-                <div className="ui one column stackable center aligned page grid" style={{marginTop: '0px', padding: '0'}}>
-                    <div className="column twelve wide">
-                        <TodoList todoItems={this.state.todoItems} onDelete={this.deleteElement}></TodoList>
+                    <div className="ui one column stackable center aligned page grid" style={{marginTop: '0px', padding: '0'}}>
+                        <div className="column twelve wide">
+                            <TodoList todoItems={this.state.todoItems} onDelete={this.deleteElement}></TodoList>
+                        </div>
                     </div>
                 </div>
             </div>
-    
+           
         );
     };
 }
